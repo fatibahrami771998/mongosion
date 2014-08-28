@@ -19,9 +19,9 @@
 	
 ###or source
 
-	wget https://pypi.python.org/packages/source/m/mongosion/mongosion-0.10.tar.gz
+	wget https://pypi.python.org/packages/source/m/mongosion/mongosion-0.1.3.tar.gz
 
-	tar -zxvf mongosion-0.10.tar.gz
+	tar -zxvf mongosion-0.1.3.tar.gz
 	
 	cd mongosion-0.10/
 	

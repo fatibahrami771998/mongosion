@@ -49,6 +49,11 @@ class SessionBase(object):
         data = self.getSession(session_id)
         return data
 
+    def deleteSession(self, session_id):
+        '''delete session'''
+        self.db.remove({'_id':session_id})
+        return True
+
     def getSession(self, session_id = None):
         '''get session and update time'''
         expiredTime = time.time() - self._setting['sessionExpires']
@@ -135,6 +140,9 @@ class Session(SessionBase):
         data = self.deleteExpired()
         return data
 
+    def delete(self, session_id):
+        return SessionBase.deleteSession( self, session_id)
+
     def get(self, session_id = None):
         
         # auto delete expired sessions 
@@ -179,6 +187,9 @@ def get( session_id ):
 
 def save( session_id, session={} ):
     return MongoSion.save( session_id, session )
+
+def delete( session_id ):
+    return MongoSion.delete( session_id )
 
 # update all session and delete sessions out of time
 def expired():

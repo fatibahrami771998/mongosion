@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 setup(
     name="mongosion",
-    version="0.10",
+    version="0.1.3",
     description="A session moudel for tornado using mongodb",
 
     author="xiaocao",
