@@ -32,9 +32,11 @@
 
 =========================================
 
-####mongosion give you 4 function: 
+####mongosion give you 5 function: 
 	
 `get( session_id )`  => get session
+
+`delete( session_id )`  => remove session
 	
 `save( session_id, {})` => save sesssion
 	
