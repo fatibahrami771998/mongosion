@@ -6,7 +6,7 @@
 ####[https://github.com/grasses/mongosion](https://github.com/grasses/mongosion)
 
 
-#####An easy session module, writed by python base on pymongo using for tornado.py or web.py!
+#####An easy session module, written by python base on pymongo using for tornado.py or web.py!
 
 ##### See introduction here [http://homeway.me/2014/08/28/mongosion/](http://homeway.me/2014/08/28/mongosion/)
 
